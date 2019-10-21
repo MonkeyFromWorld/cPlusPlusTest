@@ -45,7 +45,7 @@ int main() {
     child->showName();
 
     Parent* test = new Child();//这种情况下test是为子类与夫类的公共部分
-    test->showName();//showName指向子类的
+    test->showName();//showName指向子类
 #endif
 #if TEST_VECTOR
     vector<int> vi;//未定义长度
