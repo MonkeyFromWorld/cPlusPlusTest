@@ -1,7 +1,3 @@
-//
-// Created by cxj on 2019/10/21.
-//
-
 #include "func.h"
 #include <utility>
 using namespace std;
@@ -9,33 +5,33 @@ using namespace std;
 Person::Person(string initName, uint initAge) {
     this->name = std::move(initName);
     this->age = initAge;
-    //»ò£º
+    //æˆ–ï¼š
     //name = ...
     //age = ...
 }
 
 void Person::setAge(uint newAge) {
     this->age = newAge;
-    //»ò£º
+    //æˆ–ï¼š
     //age = ...
 }
 
 void Person::setName(string newName) {
     this->name = std::move(newName);
-    //»ò£º
+    //æˆ–ï¼š
     //name = ...
 }
 
 string Person::getName() {
     return this->name;
-    //»ò£º
+    //æˆ–ï¼š
     //return name
 
 }
 
 uint Person::getAge() {
     return this->age;
-    //»ò£º
+    //æˆ–ï¼š
     //return age
 }
 
@@ -54,7 +50,7 @@ Parent::Parent(string name, uint age, uint ID) {
 }
 
 Parent::~Parent() {
-    cout << "fatherÎö¹¹¡£" << endl;
+    cout << "fatheræžæž„ã€‚" << endl;
 }
 
 void Parent::showName() {
@@ -72,10 +68,12 @@ void Child::showNameAgain() {
 }
 
 Child::~Child() {
-    cout << "childÎö¹¹¡£" << endl;
+    cout << "childæžæž„ã€‚" << endl;
 }
 
 void Child::showName() {
-    Parent::showName();//ÓÐÕâ¾äºóÃæµÄ´úÂë¼´¿ÉÈÏÎªÔÚ·òÀàº¯ÊýÉÏµÄ²¹³ä£¬Ã»ÓÐÕâ¾äÔòÈÏÎªÊÇ¶Ô¸¸Ààº¯ÊýµÄÖØÐ´¡£
-    cout << this->name << "Ìí¼Ó/ÖØÐ´!" << endl;
+    Parent::showName();//æœ‰è¿™å¥åŽé¢çš„ä»£ç å³å¯è®¤ä¸ºåœ¨å¤«ç±»å‡½æ•°ä¸Šçš„è¡¥å……ï¼Œæ²¡æœ‰è¿™å¥åˆ™è®¤ä¸ºæ˜¯å¯¹çˆ¶ç±»å‡½æ•°çš„é‡å†™ã€‚
+    cout << this->name << "æ·»åŠ /é‡å†™!" << endl;
 }
+
+//

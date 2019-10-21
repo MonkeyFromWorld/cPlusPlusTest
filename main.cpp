@@ -1,4 +1,3 @@
-
 #include <vector>
 #include <array>
 #include "func.h" /* class Person */
@@ -33,7 +32,6 @@ int main() {
     //使用new定义对象
     auto* Lo = new Person("Lao Lo", 30);
     cout << Lo->getAge() <<endl;
-
     float addRes = add(2.2,5.0);
     cout << addRes <<endl;
      */
