@@ -9,7 +9,6 @@
 #include <cstring>
 #include <iostream>
 using namespace std;
-
 typedef unsigned int uint;
 
 class Person {
@@ -68,4 +67,11 @@ public:
 
 void showMsg(Msg &c);
 
+class CStudent
+{
+public:
+    char Name[20];  //假设学生姓名不超过19个字符，以 '\0' 结尾
+    char Id[10];  //假设学号为9位，以 '\0' 结尾
+    int age;  //年龄
+};
 #endif //CPLUSPLUSTEST_FUNC_H
