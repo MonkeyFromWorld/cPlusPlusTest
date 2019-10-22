@@ -44,4 +44,28 @@ public:
     void showName();
     void showNameAgain();
 };
+
+class Msg {
+public:
+    virtual void Display() {
+        cout << "Msg" << endl;
+    }
+};
+
+class Tea: public Msg {
+public:
+    virtual void Display() {
+        cout << "Tea" << endl;
+    }
+};
+
+class Stu : public Msg {
+public:
+    virtual void Display() {
+        cout << "Stu" << endl;
+    }
+};
+
+void showMsg(Msg &c);
+
 #endif //CPLUSPLUSTEST_FUNC_H

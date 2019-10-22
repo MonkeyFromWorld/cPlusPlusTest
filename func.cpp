@@ -76,4 +76,8 @@ void Child::showName() {
     cout << this->name << "添加/重写!" << endl;
 }
 
+void showMsg(Msg &c) {
+    c.Display();
+}
+
 //
